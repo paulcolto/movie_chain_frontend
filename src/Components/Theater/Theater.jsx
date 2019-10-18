@@ -5,29 +5,16 @@ import PlayingToday from '../PlayingToday';
 import UpcomingMovies from '../UpcomingMovies';
 
 export default function Theater(props) {
+
     return (
         <>
-            <Header 
-                slug={ props.slug }
-            />
+            {
+                props.data.map((theater,key) => (
+                    <h1 key="key">{theater.name}</h1>    
+                ))
+            }
 
-            <h1>{ props.data.name }</h1>
-
-            <div className="page__columns">
-
-                <main>
-                    <PlayingToday />
-
-                    <UpcomingMovies />
-                </main>
-
-                <aside>
-
-                    <NowPlaying />
-                    
-                </aside>
-
-            </div>
+  
         </>
         
     )

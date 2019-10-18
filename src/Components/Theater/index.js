@@ -22,7 +22,6 @@ export default class Theater extends ApiComponent {
 
     getLoadedContent() {
         let { slug } = this.props.match.params;
-
         return <Content slug={ slug } data={ this.state.data } />
     }
 }
