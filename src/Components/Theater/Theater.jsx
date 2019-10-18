@@ -11,6 +11,7 @@ export default function Theater(props) {
             {
                 props.data.map((theater,key) => (
                     <h1 key="key">{theater.name}</h1>    
+                    
                 ))
             }
 
