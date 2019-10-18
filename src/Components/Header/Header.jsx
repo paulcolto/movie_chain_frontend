@@ -9,7 +9,7 @@ export default function Header(props) {
 
         <header>
 
-            <div className="logo">LOGO</div>
+            <div className="logo">REACT</div>
 
             <TopMenu />
 

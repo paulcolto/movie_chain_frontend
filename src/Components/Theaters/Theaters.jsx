@@ -5,26 +5,20 @@ import {
     Route,
     Link
 } from "react-router-dom";
+/* import Audience from "./audience.jpg";
+ */
 
 export default function Theaters(props) {
     return (
 
         <>
-            <h1>Welcome to Daydream Cinemas</h1>
+            <h1>Welcome to React Cinemas</h1>
 
-            <div className="calltoaction">Please select a theater near you</div>
+            <div className="calltoaction"><em>"Where films are films on a screen..."</em></div>
 
-            <ul>
-                <li>
-                    <Link to="/prague">Prague</Link>
-                </li>
-                <li>
-                    <Link to="/london">London</Link>
-                </li>
-                <li>
-                    <Link to="/brussels">Brussels</Link>
-                </li>
-            </ul>
+            <h2><Link to="/prague">Prague</Link></h2>
+
+            {/* <img src={Audience} alt="" /> */}
         </>
 
     )

@@ -12,10 +12,10 @@ export default function TopMenu(props) {
     return (
 
         <nav className="topmenu">
-            <Link to="/">Theater selection</Link>
-            <Link to={ match.url }>Home</Link>
-            <Link to={`${match.url}/programme`}>Programme</Link>
+            <Link to={match.url}>Home</Link>
             <Link to="/movies">Movies</Link>
+            <Link to={`${match.url}/programme`}>Programme</Link>
+            <Link to="/">Theater selection</Link>
         </nav>
 
     )

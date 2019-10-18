@@ -5,16 +5,41 @@
 }
 
 html {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  text-align: center;
 }
 
 body {
   margin: 0;
+  background-color: #5E412F;
+  color: #F0A830;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+.calltoaction {
+  font-size: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: #F07818;
+  font-size: 2.5rem;
+}
+
+li {
+  list-style: none;
 }
 
 #app {
   max-width: 1000px;
-  margin: 0 auto;
+  margin: 0 auto; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .loader {
@@ -79,3 +104,17 @@ body {
     transform: translate(19px, 0);
   }
 }
+
+.poster img {
+  height: 400px;
+ }
+ .movies {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
+ .topmenu {
+  display: flex;
+  text-decoration: none;
+  justify-content: space-around;
+ }
