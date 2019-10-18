@@ -8,6 +8,10 @@ export default function Theater(props) {
 
     return (
         <>
+
+            <Header
+               slug={ props.slug }
+                />
             {
                 props.data.map((theater,key) => (
                     <h1 key="key">{theater.name}</h1>    
